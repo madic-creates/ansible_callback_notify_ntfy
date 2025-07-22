@@ -1,4 +1,4 @@
-# ansible-callback-notify-ntfy
+# ansible_callback_notify_ntfy
 
 An Ansible Callback Plugin that sends playbook and task recaps to an NTFY server at the end of a run.
 
@@ -20,14 +20,14 @@ callbacks_enabled = notify_ntfy
 You can install the plugin directly from GitHub:
 
 ```shell
-pip install git+https://github.com/madic-creates/ansible-callback-notify-ntfy.git
+pip install git+https://github.com/madic-creates/ansible_callback_notify_ntfy.git
 ```
 
 Then make sure to add the installed plugin path to your `ansible.cfg`:
 
 ```ini
 [defaults]
-callback_plugins = /path/to/python/site-packages/ansible_notify_ntfy/plugins/callback
+callback_plugins = /path/to/python/site-packages/ansible_callback_notify_ntfy/
 callbacks_enabled = notify_ntfy
 ```
 
