@@ -1,6 +1,8 @@
 # ansible_callback_notify_ntfy
 
-An Ansible Callback Plugin that sends playbook and task recaps to an NTFY server at the end of a run.
+An Ansible callback plugin that sends playbook and task recaps to an [ntfy](https://ntfy.sh/) server at the end of a run.
+
+<img src="./screenshot.png" width="600" alt="Ansible ntfy notification">
 
 ## Installation
 
@@ -49,6 +51,8 @@ export NTFY_PASS=yourpassword     # optional
 ## Usage
 
 Run your playbooks as usual. At the end of each playbook run, a notification with the playbook and task recap will be sent to the configured NTFY topic.
+
+Keep in mind that ntfy has a [limit on message length](https://docs.ntfy.sh/publish/#limitations). A message can only be up to 4096 bytes long. Longer messages will be converted to attachments.
 
 ## Features
 
